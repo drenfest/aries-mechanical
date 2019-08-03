@@ -33,7 +33,7 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Aries Mechanical Hvac A/C Furnace Installation & Repair Company</title>
 </svelte:head>
 
 <h1>Great success!</h1>
