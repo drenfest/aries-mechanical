@@ -5,6 +5,6 @@
 
 </style>
 
-<header>
+<footer class="container">
 	This is the Footer
-</header>
+</footer>
