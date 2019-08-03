@@ -3,9 +3,7 @@
 </script>
 
 <style>
-	/*.bg-main-nav{*/
-	/*	background:lightgrey;*/
-	/*}*/
+	.bg-dark{}
 	.bg-image{
 		width:300px;
 		padding:2rem;
@@ -32,13 +30,10 @@
 		display:flex;
 		flex-direction:column;
 	}
-	/*.nav-link, .nav-item > a{*/
-	/*	color:white;*/
-	/*}*/
 </style>
-<section class="bg-main-nav">
+<section class="bg-dark">
 	<nav class="container d-xs-none d-sm-block">
-		<ul class="nav navbar nav-fill nav-pills justify-content-between">
+		<ul class="nav navbar navbar-dark nav-fill nav-pills justify-content-between">
 			<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href='#' role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" title="Heating">Heating</a>
 				<div class="dropdown-menu">
