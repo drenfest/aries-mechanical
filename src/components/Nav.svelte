@@ -78,7 +78,7 @@
 			</li>
 			<li class="nav-item"><a rel=prefetch class='{segment === "humidification" ? "active" : ""}' href='humidification' title="Humidification">Humidification</a></li>
 			<li class="nav-item"><a rel=prefetch class='{segment === "reviews" ? "active" : ""}' href='reviews' title="Reviews">Reviews</a></li>
-			<li class="nav-item"><a rel=prefetch class='{segment === "specials" ? "active" : ""}' href='specials' title="Specials">Specials</a></li>
+			<li class="nav-item"><a rel=prefetch class='{segment === "special" ? "active" : ""}' href='special' title="Specials">Specials</a></li>
 			<li class="nav-item"><a rel=prefetch class='{segment === "contact" ? "active" : ""}' href='contact' title="Contact Us">Contact</a></li>
 		</ul>
 	</nav>
