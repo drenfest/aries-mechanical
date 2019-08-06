@@ -3,7 +3,9 @@
 </script>
 
 <style>
-	.bg-dark{}
+	.bg-main-menu{
+		background: linear-gradient(180deg, rgba(222,222,222,1) 0%, rgba(238,238,238,1) 49%, rgba(255,255,255,1) 100%);
+	}
 	.bg-image{
 		width:300px;
 		padding:2rem;
@@ -30,8 +32,32 @@
 		display:flex;
 		flex-direction:column;
 	}
+	.nav{
+		padding: 0;
+	}
+	.nav > li{
+		min-height:95px;
+		display:flex;
+		flex-direction:column;
+	}
+	.nav > li > a{
+		align-content:center;
+		font-size:20px;
+		text-transform:uppercase;
+		color:black;
+		font-weight:bold;
+		border-right: 1px solid white;
+		padding:2em 0 2em 0;
+		border-radius:0;
+	}
+	.nav > li:first-of-type > a{
+		border-left: 1px solid white;
+	}
+	.nav > li > a:focus{
+		color:white;
+	}
 </style>
-<section class="bg-dark">
+<section class="bg-main-menu">
 	<nav class="container d-xs-none d-sm-block">
 		<ul class="nav navbar navbar-dark nav-fill nav-pills justify-content-between">
 			<li class="nav-item dropdown">
@@ -63,7 +89,7 @@
 							<a class='dropdown-item {segment === "cooling" ? "active" : ""}' href='cooling' title="Cooling">Cooling</a>
 							<a class='dropdown-item {segment === "conditioning" ? "active" : ""}' href='conditioning' title="Air Conditioning">Air Conditioning</a>
 							<a class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='residential-hvac' title="Residential Hvac">Residential Hvac</a>
-							<a class='dropdown-item {segment === "new-ac-sales" ? "active" : ""}' href='new-ac-sales' title="New A/C Installation">New A/C Installation</a>
+							<a class='dropdown-item {segment === "new-air-sales" ? "active" : ""}' href='new-air-sales' title="New A/C Installation">New A/C Installation</a>
 							<a class='dropdown-item {segment === "ac-repair" ? "active" : ""}' href='ac-repair' title="A/C Repair">A/C Repair</a>
 							<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
 						</div>

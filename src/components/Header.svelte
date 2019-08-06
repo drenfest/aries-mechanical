@@ -11,6 +11,9 @@
 	.phone-number{
 		font-size:1.5rem;
 	}
+	.phone-number a{
+		font-weight:bold;
+	}
 </style>
 
 <header class="container  text-center">
