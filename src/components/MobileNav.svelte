@@ -6,19 +6,19 @@
     let routes = [
         "/ac-repair",
         "/air-cleaning",
-        "conditioning",
-        "contact",
-        "cooling",
-        "furnace-repair",
-        "furnace-sales",
-        "heating",
-        "humidification",
-        "new-air-sales",
-        "programmable",
-        "residential-hvac",
-        "reviews",
-        "special",
-        "train-products"
+        "/conditioning",
+        "/contact",
+        "/cooling",
+        "/furnace-repair",
+        "/furnace-sales",
+        "/heating",
+        "/humidification",
+        "/new-air-sales",
+        "/programmable",
+        "/residential-hvac",
+        "/reviews",
+        "/special",
+        "/train-products"
     ];
 </script>
 <style scoped>
