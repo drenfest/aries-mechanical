@@ -22,7 +22,7 @@
         "/train-products"
     ];
 </script>
-<style scoped>
+<style>
     /*--------------------------SIDE DRAWER BUTTON START----------------------*/
     button:focus {
         outline: none;
@@ -42,7 +42,7 @@
         right: 5px;
         border: none;
         background: none;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         width: 60px;
         transition: all .5s ease-out;
     }
@@ -153,7 +153,7 @@
     }
     /*--------------------------SIDE DRAWER END----------------------*/
 </style>
-<section id="mobile-nav">
+<section id="mobile-nav" on:blur="{toggleDrawer}">
     <button aria-label="Main Menu Toggle Button" id="side-drawer-button" class="{drawerToggled ? 'open': '' }" on:click="{toggleDrawer}">
         <hr class="top-line"/>
         <hr class="middle-line"/>
@@ -165,7 +165,7 @@
             <nav id="main-nav">
                 <ul class="container">
                     <li class='menu-item {segment === undefined ? "active" : ""}'>
-                        <a class=''href="/" title="Go To Home Page" on:click="{toggleDrawer}">Home</a>
+                        <a href="/" title="Go To Home Page" on:click="{toggleDrawer}">Home</a>
                     </li>
                     {#each routes as route}
                     <li class='menu-item {"/"+segment === route ? "active" : ""}'>
