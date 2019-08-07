@@ -2,7 +2,12 @@
 	import Hero from '../components/Hero.svelte';
 </script>
 <style>
-
+.about-section{
+	padding:2rem;
+}
+	.about-section > .container > h2{
+		margin-bottom:1rem;
+	}
 </style>
 <svelte:head>
 	<title>Aries Mechanical Hvac A/C Furnace Installation & Repair Company</title>
@@ -13,16 +18,23 @@
 		heroTitle="Providing Your Family"
 		heroBigText="Affordable & Quality HVAC Services For Over 30 Years"
 		heroText=" Your Hvac | A/C | Furnace Installation & Repair Company">
+	<p>Our customers are treated as if they are part of our family. We respect our customers and listen to their needs. We provide our customers with honesty and reliability that they deserve. Aries Mechanical, Inc. is known for our quality craftsmanship at competitive prices.</p>
 	<a class="btn btn-outline-light" href="/contact" title="Schedule Hvac Repair Or Hvac Installation Service">Schedule Service Now</a>
 </Hero>
 		<!--OLD HOMEPAGE CONTENT START-->
-<section class="container">
-	<h1>Aries Mechanical, Inc. Heating & Cooling in Newark, IL</h1>
-		<p>Aries Mechanical, Inc. is proud to serve the following communities:  Newark, Oswego, Plano, Yorkville, and Sandwich, IL with more than 25 years experience in the heating and air conditioning mechanical industry.</p>
-		<p>Our customers are treated as if they are part of our family. We respect our customers and listen to their needs. We provide our customers with honesty and reliability that they deserve. Aries Mechanical, Inc. is known for our quality craftsmanship at competitive prices.</p>
-		<p>We are the HVAC contractor that specializes in residential heating and air conditioning solutions. If your looking to replace a current furnace or Air Conditioner or repair an exsisting call Aries Mechanical Inc.</p>
-		<p>Heating, Cooling, Humidification and Air Cleaning Products We Recommend</p>
-		<p>The single-stage XR80 gas furnace is a good choice for those looking for solid heating. Tested, durable components help make sure your system is at optimum performance. With a system rating of 80% AFUE, the XR80’s durable construction ensures long-lasting performance and reliability.</p>
+<section class="about-section">
+	<div class="container">
+		<h2>Aries Mechanical, Inc. Heating & Cooling in Newark, IL</h2>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<p>Aries Mechanical, Inc. is proud to serve the following communities:  Newark, Oswego, Plano, Yorkville, and Sandwich, IL with more than 25 years experience in the heating and air conditioning mechanical industry.</p>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<p>We are the HVAC contractor that specializes in residential heating and air conditioning solutions. If your looking to replace a current furnace or Air Conditioner or repair an exsisting call Aries Mechanical Inc.</p>
+			</div>
+		</div>
+	</div>
+
 <!--<h2 class="section-heading">Heating</h2>-->
 <!--<h3 class="card-title">T_XR95</h3>-->
 <!--<p class="card-text">The XR95 forced air heating gas furnace offers our highest energy efficiency in single-stage performance, which means more of your energy dollars go toward actually heating your home. Featuring a 95% AFUE rating, the XR95 is constructed with high-quality components for long-lasting performance and durability.</p>-->

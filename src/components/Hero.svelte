@@ -78,6 +78,7 @@
         z-index:3;
         align-self:flex-start;
         margin-top:1rem;
+        color:white;
     }
     @media screen and (min-width: 768px){
         #hero-section{
