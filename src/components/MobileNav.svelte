@@ -1,3 +1,26 @@
+<script>
+    let drawerToggled = false;
+    const toggleDrawer = () => {
+        return drawerToggled = !drawerToggled;
+    };
+    let routes = [
+        "/ac-repair",
+        "/air-cleaning",
+        "conditioning",
+        "contact",
+        "cooling",
+        "furnace-repair",
+        "furnace-sales",
+        "heating",
+        "humidification",
+        "new-air-sales",
+        "programmable",
+        "residential-hvac",
+        "reviews",
+        "special",
+        "train-products"
+    ];
+</script>
 <style scoped>
     /*--------------------------SIDE DRAWER BUTTON START----------------------*/
     button:focus {
@@ -152,26 +175,4 @@
         </main>
     </aside>
 </section>
-<script>
-    let drawerToggled = false;
-    const toggleDrawer = () => {
-        return drawerToggled = !drawerToggled;
-    };
-    let routes = [
-        "/ac-repair",
-        "/air-cleaning",
-        "conditioning",
-        "contact",
-        "cooling",
-        "furnace-repair",
-        "furnace-sales",
-        "heating",
-        "humidification",
-        "new-air-sales",
-        "programmable",
-        "residential-hvac",
-        "reviews",
-        "special",
-        "train-products"
-    ];
-</script>
+
