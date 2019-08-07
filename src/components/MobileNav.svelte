@@ -36,8 +36,8 @@
         padding: 10px 0;
     }
     #side-drawer-button {
-        position: absolute;
-        z-index: 3;
+        position: fixed;
+        z-index: 3000;
         top: 5px;
         right: 5px;
         border: none;
@@ -99,7 +99,7 @@
 
     aside {
         position: fixed;
-        z-index: 2;
+        z-index: 2999;
         top: 0;
         right: -100%;
         width: 300px;
