@@ -1,4 +1,5 @@
 <script>
+    export let segment;
     let drawerToggled = false;
     const toggleDrawer = () => {
         return drawerToggled = !drawerToggled;
@@ -137,7 +138,9 @@
         width: 100%;
         padding: .5em 0;
     }
-
+    #main-nav > .container > .menu-item.active{
+        background-color:var(--primary-color);
+    }
     #main-nav > .container > .menu-item a {
         color: white;
         text-decoration: none;
@@ -148,7 +151,6 @@
         font-weight: bold;
 
     }
-
     /*--------------------------SIDE DRAWER END----------------------*/
 </style>
 <section id="mobile-nav">
@@ -162,11 +164,11 @@
         <main>
             <nav id="main-nav">
                 <ul class="container">
-                    <li class="menu-item">
-                        <a href="/" title="Go To Home Page" on:click="{toggleDrawer}">Home</a>
+                    <li class='menu-item {segment === undefined ? "active" : ""}'>
+                        <a class=''href="/" title="Go To Home Page" on:click="{toggleDrawer}">Home</a>
                     </li>
                     {#each routes as route}
-                    <li class="menu-item">
+                    <li class='menu-item {"/"+segment === route ? "active" : ""}'>
                         <a href="{route}" title="{route.replace(/\//g,'').replace(/-/g,' ').toUpperCase()}" on:click="{toggleDrawer}"> { route.replace(/\//g,'').replace(/-/g,' ').toUpperCase() }</a>
                     </li>
                     {/each}

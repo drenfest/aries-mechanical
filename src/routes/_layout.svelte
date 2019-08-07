@@ -8,7 +8,7 @@
 
 <style>
 </style>
-<MobileNav/>
+<MobileNav {segment}/>
 <Header></Header>
 <Nav {segment}/>
 <main>
