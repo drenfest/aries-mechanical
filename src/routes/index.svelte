@@ -2,6 +2,7 @@
 	import Hero from '../components/Hero.svelte';
 	import ServiceBtn from '../components/ServiceBtn.svelte';
 	import Divider from '../components/Divider.svelte';
+	import Coupon from '../components/Coupon.svelte';
 	import TraneBanner from '../components/TraneBanner.svelte';
 </script>
 <style>
@@ -18,6 +19,10 @@
 	.service-buttons{
 		display:grid;
 		grid-template-rows:1fr 1fr 1fr;
+	}
+	.coupon-section{
+		background: #e6e6e6;
+		padding:3rem 0;
 	}
 	@media screen and (min-width:768px){
 		.service-btns-bg{
@@ -84,6 +89,24 @@
 <!--<h3 class="card-title">Whole House UV Air Purification System</h3>-->
 <!--<p class="card-text">The Guardian Air Reflective Electro Magnetic Energy purification system purifies indoor air with naturally-occurring oxidizers like ionized hydro-peroxides. The Guardian Air is today’s most advanced technology for boosting airborne oxidizers, critical to your family’s health</p>-->
 	<!--OLD HOMEPAGE CONTENT END-->
+</section>
+<Divider>
+	<h2>Specials</h2>
+</Divider>
+<section class="coupon-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4">
+				<Coupon couponPrice="$85 Flat-rate" couponTitle="Gas Furnace or A/C Cleaning" couponSubtitle="with FREE Safety Inspection!" couponText="Not to be combined with any other discount or offer" couponExpires="Never"/>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<Coupon couponPrice="$200 Off" couponTitle="Any New Furnace or A/C Installation" couponSubtitle="" couponText="Not to be combined with any other discount or offer" couponExpires="Never"/>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<Coupon couponPrice="$50 off" couponTitle="Any Service Repair on Furnace or A/C" couponSubtitle="" couponText="Not to be combined with any other discount or offer" couponExpires="Never"/>
+			</div>
+		</div>
+	</div>
 </section>
 <TraneBanner />
 <Divider>

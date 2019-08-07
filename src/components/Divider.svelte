@@ -8,7 +8,6 @@
         color:white;
         font-size:25px;
         padding:2rem;
-        margin-bottom:1rem;
     }
     .divider > .container{
         position:relative;
