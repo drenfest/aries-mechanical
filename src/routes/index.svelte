@@ -4,6 +4,7 @@
 	import Divider from '../components/Divider.svelte';
 	import Coupon from '../components/Coupon.svelte';
 	import TraneBanner from '../components/TraneBanner.svelte';
+	import ServicesGrid from '../components/ServicesGrid.svelte';
 </script>
 <style>
 	.about-section{
@@ -126,3 +127,4 @@
 <Divider>
 	<h2>Heating & Cooling Services</h2>
 </Divider>
+<ServicesGrid/>
