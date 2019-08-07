@@ -19,7 +19,7 @@
         "/residential-hvac",
         "/reviews",
         "/special",
-        "/train-products"
+        "/trane-products"
     ];
 </script>
 <style>
