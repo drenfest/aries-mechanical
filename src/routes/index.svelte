@@ -1,12 +1,34 @@
 <script>
 	import Hero from '../components/Hero.svelte';
+	import ServiceBtn from '../components/ServiceBtn.svelte';
+	import Divider from '../components/Divider.svelte';
 </script>
 <style>
-.about-section{
-	padding:2rem;
-}
+	.about-section{
+		padding:2rem;
+	}
 	.about-section > .container > h2{
 		margin-bottom:1rem;
+	}
+	.service-btns-bg{
+		background: rgb(113,29,29);
+		background: linear-gradient(180deg, rgba(113,29,29,1) 0%, rgba(157,39,40,1) 50%, rgba(236,50,55,1) 100%);
+	}
+	.service-buttons{
+		display:grid;
+		grid-template-rows:1fr 1fr 1fr;
+	}
+	@media screen and (min-width:768px){
+		.service-btns-bg{
+			background: rgb(113,29,29);
+			background: linear-gradient(90deg, rgba(113,29,29,1) 0%, rgba(157,39,40,1) 50%, rgba(236,50,55,1) 100%);
+		}
+		.service-buttons{
+			grid-template-rows:1fr;
+			grid-template-columns: 1fr 1fr 1fr;
+			max-width: 1140px;
+			margin:auto;
+		}
 	}
 </style>
 <svelte:head>
@@ -21,10 +43,17 @@
 	<p>Our customers are treated as if they are part of our family. We respect our customers and listen to their needs. We provide our customers with honesty and reliability that they deserve. Aries Mechanical, Inc. is known for our quality craftsmanship at competitive prices.</p>
 	<a class="btn btn-outline-light" href="/contact" title="Schedule Hvac Repair Or Hvac Installation Service">Schedule Service Now</a>
 </Hero>
-		<!--OLD HOMEPAGE CONTENT START-->
+<div class="service-btns-bg">
+	<section class="service-buttons">
+		<ServiceBtn serviceBtnBg="#711D1D" serviceLink="/contact" serviceTitle="Schedule Service" serviceIcon="/assets/images/icons/repairs-icon.png" serviceIconAlt="Hvac a/c furnace Repairs Icon">Service</ServiceBtn>
+		<ServiceBtn serviceBtnBg="#9D2728" serviceLink="/contact" serviceTitle="Schedule Replacement" serviceIcon="/assets/images/icons/replacements-icon.png" serviceIconAlt="Hvac a/c furnace Replacements Icon">Installation</ServiceBtn>
+		<ServiceBtn serviceLink="/contact" serviceTitle="Setup Annual Maintenance" serviceIcon="/assets/images/icons/maintenance-icon.png" serviceIconAlt="Hvac a/c furnace Maintenance Icon">Maintenance</ServiceBtn>
+	</section>
+</div>
+
 <section class="about-section">
 	<div class="container">
-		<h2>Aries Mechanical, Inc. Heating & Cooling in Newark, IL</h2>
+		<h2 class="text-center">Aries Mechanical, Inc. Heating & Cooling in Newark, IL</h2>
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
 				<p>Aries Mechanical, Inc. is proud to serve the following communities:  Newark, Oswego, Plano, Yorkville, and Sandwich, IL with more than 25 years experience in the heating and air conditioning mechanical industry.</p>
@@ -34,7 +63,7 @@
 			</div>
 		</div>
 	</div>
-
+<!--OLD HOMEPAGE CONTENT START-->
 <!--<h2 class="section-heading">Heating</h2>-->
 <!--<h3 class="card-title">T_XR95</h3>-->
 <!--<p class="card-text">The XR95 forced air heating gas furnace offers our highest energy efficiency in single-stage performance, which means more of your energy dollars go toward actually heating your home. Featuring a 95% AFUE rating, the XR95 is constructed with high-quality components for long-lasting performance and durability.</p>-->
@@ -55,3 +84,6 @@
 <!--<p class="card-text">The Guardian Air Reflective Electro Magnetic Energy purification system purifies indoor air with naturally-occurring oxidizers like ionized hydro-peroxides. The Guardian Air is today’s most advanced technology for boosting airborne oxidizers, critical to your family’s health</p>-->
 	<!--OLD HOMEPAGE CONTENT END-->
 </section>
+<Divider>
+	<h2>Heating & Cooling Services</h2>
+</Divider>
