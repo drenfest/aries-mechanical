@@ -2,6 +2,7 @@
 	import Hero from '../components/Hero.svelte';
 	import ServiceBtn from '../components/ServiceBtn.svelte';
 	import Divider from '../components/Divider.svelte';
+	import TraneBanner from '../components/TraneBanner.svelte';
 </script>
 <style>
 	.about-section{
@@ -84,6 +85,7 @@
 <!--<p class="card-text">The Guardian Air Reflective Electro Magnetic Energy purification system purifies indoor air with naturally-occurring oxidizers like ionized hydro-peroxides. The Guardian Air is today’s most advanced technology for boosting airborne oxidizers, critical to your family’s health</p>-->
 	<!--OLD HOMEPAGE CONTENT END-->
 </section>
+<TraneBanner />
 <Divider>
 	<h2>Heating & Cooling Services</h2>
 </Divider>
