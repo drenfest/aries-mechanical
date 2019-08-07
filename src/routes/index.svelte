@@ -34,6 +34,7 @@
 
 <svelte:head>
 	<title>Aries Mechanical Hvac A/C Furnace Installation & Repair Company</title>
+	<meta name="description" content="Customers rely on Aries Mechanic Inc. HVAC in Newark, IL to get the job done in a high-degree of professionalism and workmanship.">
 </svelte:head>
 
 <h1>Great success!</h1>
