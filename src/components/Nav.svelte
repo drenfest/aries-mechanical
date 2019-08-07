@@ -53,12 +53,13 @@
 	.nav > li:first-of-type > a{
 		border-left: 1px solid white;
 	}
-	.nav > li > a:focus{
-		color:white;
+	.nav > li > a:focus, .active{
+		color:white !important;
+		background-color:var(--primary-color);
 	}
 </style>
-<section class="bg-main-menu">
-	<nav class="container d-xs-none d-sm-block">
+<section class="bg-main-menu d-none d-md-block">
+	<nav class="container">
 		<ul class="nav navbar navbar-dark nav-fill nav-pills justify-content-between">
 			<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href='#' role="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" title="Heating">Heating</a>

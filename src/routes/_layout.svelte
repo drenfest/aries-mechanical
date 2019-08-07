@@ -1,5 +1,6 @@
 <script>
 	import Nav from '../components/Nav.svelte';
+	import MobileNav from '../components/MobileNav.svelte';
 	import Header from '../components/Header.svelte';
 	import Footer from '../components/Footer.svelte';
 	export let segment;
@@ -7,6 +8,7 @@
 
 <style>
 </style>
+<MobileNav/>
 <Header></Header>
 <Nav {segment}/>
 <main>

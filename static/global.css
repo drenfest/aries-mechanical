@@ -1,3 +1,7 @@
+
+:root{
+    --primary-color: #ec3237;
+}
 a{
-    color:#ec3237;
+    color:var(--primary-color);
 }
