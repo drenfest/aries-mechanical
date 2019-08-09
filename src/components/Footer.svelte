@@ -3,8 +3,17 @@
 
 <style>
 
+footer {
+	
+	background-color:#ccc;
+	padding:5em 2em;
+}
+
+
 </style>
 
-<footer class="container">
+<footer>
+<div  class="container">
 	This is the Footer
+	</div>
 </footer>

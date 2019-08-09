@@ -6,6 +6,7 @@
 	export let segment;
 </script>
 
+
 <style>
 </style>
 <MobileNav {segment}/>

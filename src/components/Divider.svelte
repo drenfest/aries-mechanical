@@ -18,7 +18,8 @@
         position:absolute;
         width:50px;
         height:50px;
-        transform:rotate(45deg)translateX(-25%);
+        transform:rotate(45deg);
+        margin-left:-25px;
         background-color:var(--primary-color);
         bottom:-25px;
         left:50%;

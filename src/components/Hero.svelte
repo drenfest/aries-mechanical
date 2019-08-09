@@ -6,7 +6,8 @@
         position:relative;
         overflow:hidden;
         background-color:var(--primary-color);
-        padding: 2rem;
+        padding: 5rem 2rem;
+
     }
     #hero-section .grid-container{
         display:grid;
@@ -50,11 +51,13 @@
         position: relative;
         z-index: 14;
         width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
     .twenty-four-seven{
         position:absolute;
         right:20px;
-        top:77%;
+        bottom:15%;
     }
     .hero-title, .hero-big-text, .hero-text, .hero-link{
         position:relative;
@@ -64,10 +67,14 @@
     }
     .hero-title{
         font-size:25px;
+        font-weight:300;
+        text-transform: uppercase;
     }
     .hero-big-text{
         font-size:35px;
-        font-weight:bold;
+        font-weight:700;
+        text-transform: none;
+
     }
     .hero-text{
         align-self:flex-start;
@@ -77,7 +84,7 @@
         position:relative;
         z-index:3;
         align-self:flex-start;
-        margin-top:1rem;
+       
         color:white;
     }
     @media screen and (min-width: 768px){
@@ -100,7 +107,7 @@
         }
         .twenty-four-seven{
             right:20px;
-            top:50%;
+            bottom:8%;
         }
         .hero-title{
             font-size:25px;

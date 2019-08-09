@@ -11,10 +11,12 @@
         padding:1rem;
         align-items:center;
         font-size:30px;
+        font-family: 'Oswald', sans-serif;
+
     }
     .service-btn > a:hover{
         text-decoration:none;
-        font-weight:bold;
+        
     }
     .service-btn > a > img{
         border-right:1px solid white;
