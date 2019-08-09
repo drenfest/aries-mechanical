@@ -31,7 +31,9 @@
 	font-size:26px;
 	font-weight:700;
 	}
-
+	.logo img {
+		max-width: 94%;
+	}
 </style>
 
 <header class="container  text-center">
@@ -40,7 +42,7 @@
 		<div class="col-sm phone-number">
 			<div class="flex-column justify-content-center">
 				<p class="header-support">
-					Free Estimates | 24/7 Support 
+					Free Estimates | 24/7 Support
 				<span class="header-number"><a href="tel:+1815-695-5828" title="Click Here To Call Now">815-695-5828</a></span>
 				</p>
 			</div>

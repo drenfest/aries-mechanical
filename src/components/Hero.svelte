@@ -1,7 +1,14 @@
 <script>
-    export let heroImage,heroTitle,heroBigText,heroText;
+    import ServiceBtn from './ServiceBtn.svelte'
+    export let heroImage="/assets/images/heros/hmhero1.jpg";
+    export let heroTitle="Providing Your Family";
+    export let heroBigText="Affordable & Quality HVAC Services For Over 30 Years";
+    export let heroText=" Your Hvac | A/C | Furnace Installation & Repair Company";
 </script>
 <style>
+    img {
+        max-width: none;
+    }
     #hero-section{
         position:relative;
         overflow:hidden;
@@ -84,7 +91,7 @@
         position:relative;
         z-index:3;
         align-self:flex-start;
-       
+
         color:white;
     }
     @media screen and (min-width: 768px){
@@ -116,6 +123,26 @@
             font-size:35px;
         }
     }
+    .service-btns-bg{
+        background: rgb(61,84,103);
+        background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
+    }
+    .service-buttons{
+        display:grid;
+        grid-template-rows:1fr 1fr 1fr;
+    }
+    @media screen and (min-width:768px){
+        .service-btns-bg{
+            background: rgb(61,84,103);
+            background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
+        }
+        .service-buttons{
+            grid-template-rows:1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 1140px;
+            margin:auto;
+        }
+    }
 </style>
 <section id="hero-section">
     <div class="grid-container container">
@@ -136,3 +163,10 @@
         </div>
     </div>
 </section>
+<div class="service-btns-bg">
+    <section class="service-buttons">
+        <ServiceBtn serviceBtnBg="#3d5467" serviceLink="/contact" serviceTitle="Schedule Service" serviceIcon="/assets/images/icons/repairs-icon.png" serviceIconAlt="Hvac a/c furnace Repairs Icon">Service</ServiceBtn>
+        <ServiceBtn serviceBtnBg="#324555" serviceLink="/contact" serviceTitle="Schedule Replacement" serviceIcon="/assets/images/icons/replacements-icon.png" serviceIconAlt="Hvac a/c furnace Replacements Icon">Installation</ServiceBtn>
+        <ServiceBtn serviceBtnBg="#607382"  serviceLink="/contact" serviceTitle="Setup Annual Maintenance" serviceIcon="/assets/images/icons/maintenance-icon.png" serviceIconAlt="Hvac a/c furnace Maintenance Icon">Maintenance</ServiceBtn>
+    </section>
+</div>

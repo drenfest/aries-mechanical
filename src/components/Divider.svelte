@@ -25,6 +25,10 @@
         z-index:2;
         margin-left:-25px;
     }
+    .divider > .container > *{
+    color:#ffffff!important;
+    }
+
 </style>
 <section class="divider">
     <div class="container text-center">

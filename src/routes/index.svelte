@@ -1,25 +1,25 @@
 <script>
 	import Hero from '../components/Hero.svelte';
-	import ServiceBtn from '../components/ServiceBtn.svelte';
 	import Divider from '../components/Divider.svelte';
 	import Coupon from '../components/Coupon.svelte';
 	import TraneBanner from '../components/TraneBanner.svelte';
 	import ServicesGrid from '../components/ServicesGrid.svelte';
+
 </script>
 <style>
 	.about-section{
-		padding:4rem 2rem;
+		padding:6rem 2rem;
 	}
 	.about-section > .container > h2{
-		margin-bottom:1rem;
+		margin-bottom:1.75rem;
+		font-weight:700;
+		font-size:2.5rem;
 	}
-	.service-btns-bg{
-	background: rgb(61,84,103);
-background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
-	}
-	.service-buttons{
-		display:grid;
-		grid-template-rows:1fr 1fr 1fr;
+	.aboutsub {
+	font-size:60%;
+	font-weight:300;
+	display:block;
+	text-transform:uppercase;
 	}
 	.coupon-section{
 		background: #e6e6e6;
@@ -37,16 +37,6 @@ background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%)
 		background-color:#711D1D;
 	}
 	@media screen and (min-width:768px){
-		.service-btns-bg{
-			background: rgb(61,84,103);
-background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
-		}
-		.service-buttons{
-			grid-template-rows:1fr;
-			grid-template-columns: 1fr 1fr 1fr;
-			max-width: 1140px;
-			margin:auto;
-		}
 	}
 </style>
 <svelte:head>
@@ -61,17 +51,10 @@ background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%)
 	<p>Our customers are treated as if they are part of our family. We respect our customers and listen to their needs. We provide our customers with honesty and reliability that they deserve. Aries Mechanical, Inc. is known for our quality craftsmanship at competitive prices.</p>
 	<a class="btn btn-light" href="/contact" title="Schedule Hvac Repair Or Hvac Installation Service">Schedule Service Now</a>
 </Hero>
-<div class="service-btns-bg">
-	<section class="service-buttons">
-		<ServiceBtn serviceBtnBg="#3d5467" serviceLink="/contact" serviceTitle="Schedule Service" serviceIcon="/assets/images/icons/repairs-icon.png" serviceIconAlt="Hvac a/c furnace Repairs Icon">Service</ServiceBtn>
-		<ServiceBtn serviceBtnBg="#324555" serviceLink="/contact" serviceTitle="Schedule Replacement" serviceIcon="/assets/images/icons/replacements-icon.png" serviceIconAlt="Hvac a/c furnace Replacements Icon">Installation</ServiceBtn>
-		<ServiceBtn serviceBtnBg="#607382"  serviceLink="/contact" serviceTitle="Setup Annual Maintenance" serviceIcon="/assets/images/icons/maintenance-icon.png" serviceIconAlt="Hvac a/c furnace Maintenance Icon">Maintenance</ServiceBtn>
-	</section>
-</div>
-
+<!--Service Buttons Are In Hero Component-->
 <section class="about-section">
 	<div class="container">
-		<h2 class="text-center">Aries Mechanical, Inc. Heating & Cooling in Newark, IL</h2>
+		<h2 class="text-center">Aries Mechanical, Inc.<span class="aboutsub">Heating & Cooling in Newark, IL</span></h2>
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
 				<p>Aries Mechanical, Inc. is proud to serve the following communities:  Newark, Oswego, Plano, Yorkville, and Sandwich, IL with more than 25 years experience in the heating and air conditioning mechanical industry.</p>
@@ -109,13 +92,13 @@ background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%)
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-4">
-				<Coupon couponPrice="$85 Flat-rate" couponTitle="Gas Furnace or A/C Cleaning" couponSubtitle="with FREE Safety Inspection!" couponText="Not to be combined with any other discount or offer" couponExpires="Never"/>
+				<Coupon couponPrice="$85 Flat-rate" couponTitle="Gas Furnace or A/C Cleaning" couponSubtitle="with FREE Safety Inspection!" couponText="Not to be combined with any other discount or offer"/>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<Coupon couponPrice="$200 Off" couponTitle="Any New Furnace or A/C Installation" couponSubtitle="" couponText="Not to be combined with any other discount or offer" couponExpires="Never"/>
+				<Coupon couponPrice="$200 Off" couponTitle="Any New Furnace or A/C Installation" couponSubtitle="" couponText="Not to be combined with any other discount or offer"/>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<Coupon couponPrice="$50 off" couponTitle="Any Service Repair on Furnace or A/C" couponSubtitle="" couponText="Not to be combined with any other discount or offer" couponExpires="Never"/>
+				<Coupon couponPrice="$50 off" couponTitle="Any Service Repair on Furnace or A/C" couponSubtitle="" couponText="Not to be combined with any other discount or offer"/>
 			</div>
 		</div>
 		<div class="text-center specials-button">

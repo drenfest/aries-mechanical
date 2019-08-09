@@ -19,10 +19,13 @@
         "/residential-hvac",
         "/reviews",
         "/special",
-        "/trane-products"
+        "/trane-products",
     ];
 </script>
 <style>
+    #mobile-nav aside{
+        overflow-y:scroll;
+    }
     /*--------------------------SIDE DRAWER BUTTON START----------------------*/
     button:focus {
         outline: none;

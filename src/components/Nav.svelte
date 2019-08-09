@@ -48,7 +48,7 @@
 		padding: 0;
 	}
 	.nav > li{
-		min-height:45px;
+		min-height:50px;
 		display:flex;
 		flex-direction:column;
 		font-family: 'Oswald', sans-serif;
@@ -70,7 +70,6 @@
 
 	.nav > li > a:hover {
     background-color: #ffffff;
-		color:var(--primary-color);
     text-decoration:none;
     }
 
@@ -79,17 +78,17 @@
 		border-left: 1px solid white;
 	}
 	.nav > li > a:focus, .active{
+
 		background-color:white !important;
-	}
-	.nav > li > a:active{
-		color:var(--primary-color);
 	}
 
 	.dropdown-menu {
 		border:none;
 		border-radius:0 0 .25rem .25rem;
 	}
-
+	.dropdown-item.active:not(*:active) {
+		color: var(--primary-color);
+	}
 </style>
 <section class="bg-main-menu d-none d-md-block">
 	<nav class="container">

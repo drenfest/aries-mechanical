@@ -58,9 +58,9 @@
             <a class="service service-heating" title="Read About Our Heating Services" href="/heating">Heating</a>
             <a class="service service-ac" title="Read About Our Air Conditioning" href="/conditioning">Air Conditioning</a>
             <a class="service service-air-cleaning" title="Read About Our Air Cleaning And Purifying Services" href="/air-cleaning">Air Cleaning</a>
-            <a class="service service-res-hvac" title="Read About Our Residential Services" href="">Residential Hvac</a>
+            <a class="service service-res-hvac" title="Read About Our Residential Services" href="/residential-hvac">Residential Hvac</a>
             <a class="service service-thermostats" title="Read About Programmable Thermostats" href="/programmable">Thermostats</a>
-            <a class="service service-humidify" title="Read About Our Furnace Repair Services" href="">Furnace Repair</a>
+            <a class="service service-humidify" title="Read About Our Furnace Repair Services" href="/furnace-repair">Furnace Repair</a>
         </div>
     </div>
 </section>

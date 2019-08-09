@@ -3,7 +3,6 @@
     export let couponTitle;
     export let couponSubtitle;
     export let couponText = "Not to be combined with any other discount or offer";
-    export let couponExpires;
 </script>
 <style>
     .coupon{
@@ -32,18 +31,14 @@
         font-size:14px;
     }
    .card-s {
-
    padding:2em;
    }
-
 </style>
 <div class="coupon card text-center">
     <div class="card-body card-s">
         <h2 class="card-title">{couponPrice}</h2>
         <h3 class="card-subtitle">{couponTitle} <br> {couponSubtitle}</h3>
         <p class="card-text">{couponText}</p>
+        <img alt="Aries Mechanical Logo" src="/assets/images/logo.png">
     </div>
-    <p class="card-footer">
-        <strong>Expires:</strong> {couponExpires}
-    </p>
 </div>

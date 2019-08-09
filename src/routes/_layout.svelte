@@ -8,11 +8,21 @@
 
 
 <style>
+
 </style>
 <MobileNav {segment}/>
 <Header></Header>
 <Nav {segment}/>
-<main>
-	<slot></slot>
-</main>
+{#if segment === undefined}
+	<main>
+		<slot></slot>
+	</main>
+	{:else}
+		<main class="{segment} subpage">
+			<slot></slot>
+		</main>
+{/if}
+<section class="nn-section container">
+	REPLACE-PHP-CODE-HERE
+</section>
 <Footer></Footer>
