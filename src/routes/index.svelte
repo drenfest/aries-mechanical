@@ -14,8 +14,8 @@
 		margin-bottom:1rem;
 	}
 	.service-btns-bg{
-		background: rgb(113,29,29);
-		background: linear-gradient(180deg, rgba(113,29,29,1) 0%, rgba(157,39,40,1) 50%, rgba(236,50,55,1) 100%);
+	background: rgb(61,84,103);
+background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
 	}
 	.service-buttons{
 		display:grid;
@@ -36,14 +36,10 @@
 	.specials-button>a:hover{
 		background-color:#711D1D;
 	}
-	.btn-light{
-		color:var(--primary-color);
-		font-weight:bold;
-	}
 	@media screen and (min-width:768px){
 		.service-btns-bg{
-			background: rgb(113,29,29);
-			background: linear-gradient(90deg, rgba(113,29,29,1) 0%, rgba(157,39,40,1) 50%, rgba(236,50,55,1) 100%);
+			background: rgb(61,84,103);
+background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
 		}
 		.service-buttons{
 			grid-template-rows:1fr;
@@ -67,9 +63,9 @@
 </Hero>
 <div class="service-btns-bg">
 	<section class="service-buttons">
-		<ServiceBtn serviceBtnBg="#711D1D" serviceLink="/contact" serviceTitle="Schedule Service" serviceIcon="/assets/images/icons/repairs-icon.png" serviceIconAlt="Hvac a/c furnace Repairs Icon">Service</ServiceBtn>
-		<ServiceBtn serviceBtnBg="#9D2728" serviceLink="/contact" serviceTitle="Schedule Replacement" serviceIcon="/assets/images/icons/replacements-icon.png" serviceIconAlt="Hvac a/c furnace Replacements Icon">Installation</ServiceBtn>
-		<ServiceBtn serviceLink="/contact" serviceTitle="Setup Annual Maintenance" serviceIcon="/assets/images/icons/maintenance-icon.png" serviceIconAlt="Hvac a/c furnace Maintenance Icon">Maintenance</ServiceBtn>
+		<ServiceBtn serviceBtnBg="#3d5467" serviceLink="/contact" serviceTitle="Schedule Service" serviceIcon="/assets/images/icons/repairs-icon.png" serviceIconAlt="Hvac a/c furnace Repairs Icon">Service</ServiceBtn>
+		<ServiceBtn serviceBtnBg="#324555" serviceLink="/contact" serviceTitle="Schedule Replacement" serviceIcon="/assets/images/icons/replacements-icon.png" serviceIconAlt="Hvac a/c furnace Replacements Icon">Installation</ServiceBtn>
+		<ServiceBtn serviceBtnBg="#607382"  serviceLink="/contact" serviceTitle="Setup Annual Maintenance" serviceIcon="/assets/images/icons/maintenance-icon.png" serviceIconAlt="Hvac a/c furnace Maintenance Icon">Maintenance</ServiceBtn>
 	</section>
 </div>
 

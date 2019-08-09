@@ -8,7 +8,7 @@
 <style>
     .coupon{
         padding-bottom:0;
-        min-height:300px;
+        min-height:225px;
     }
     .card-title{
         color: var(--primary-color);
@@ -18,6 +18,7 @@
     }
     .card-footer{
         margin-bottom: 0px;
+        background-color:#95A1AC;
     }
     .card-subtitle{
         font-size:1rem;

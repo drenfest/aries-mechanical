@@ -20,27 +20,26 @@
         font-weight:bold;
         background-color:rgba(0,0,0,.4);
         background-blend-mode:overlay;
-        background-position:center;
-        background-size:cover;
-        width:100%;
+        font-family: 'Oswald', sans-serif;
+
     }
-    .service.service-heating{
-        background:url(/assets/images/services/service1.jpg)no-repeat;
+    .service-heating{
+        background-image:url("/assets/images/services/service1.jpg");
     }
-    .service.service-ac{
-        background:url(/assets/images/services/service2.jpg)no-repeat;
+    .service-ac{
+        background-image:url("/assets/images/services/service2.jpg");
     }
-    .service.service-air-cleaning{
-        background:url(/assets/images/services/service3.jpg)no-repeat;
+    .service-air-cleaning{
+        background-image:url("/assets/images/services/service3.jpg");
     }
-    .service.service-res-hvac{
-        background:url(/assets/images/services/service4.jpg)no-repeat;
+    .service-res-hvac{
+        background-image:url("/assets/images/services/service4.jpg");
     }
-    .service.service-humidify{
-        background:url(/assets/images/services/service-humidification.jpg)no-repeat;
+    .service-humidify{
+        background-image:url("/assets/images/services/service-humidification.jpg");
     }
-    .service.service-thermostats{
-        background:url(/assets/images/services/service5.jpg)no-repeat;
+    .service-thermostats{
+        background-image:url("/assets/images/services/service5.jpg");
     }
     @media screen and (min-width:768px){
         .grid{

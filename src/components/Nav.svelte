@@ -60,7 +60,7 @@
 		align-content:center;
 		font-size:20px;
 		text-transform:uppercase;
-		color:black;
+		color:#3d5467;
 		font-weight:bold;
 		border-right: 1px solid white;
 		padding:1.25em 0 1.25em 0;
@@ -70,6 +70,7 @@
 
 	.nav > li > a:hover {
     background-color: #ffffff;
+		color:var(--primary-color);
     text-decoration:none;
     }
 
@@ -78,8 +79,10 @@
 		border-left: 1px solid white;
 	}
 	.nav > li > a:focus, .active{
-
 		background-color:white !important;
+	}
+	.nav > li > a:active{
+		color:var(--primary-color);
 	}
 
 	.dropdown-menu {
@@ -97,11 +100,11 @@
 					<div class="row">
 							<div class="col-6 mega-content">
 								<h3>Heating</h3>
-								<a class='dropdown-item {segment === "heating" ? "active" : ""}' href='/heating' title="Heating">Heating</a>
-								<a class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='/residential-hvac' title="Residential Hvac">Residential Hvac</a>
-								<a class='dropdown-item {segment === "furnace-sales" ? "active" : ""}' href='/furnace-sales' title="New Furnace Installation">New Furnace Installation</a>
-								<a class='dropdown-item {segment === "furnace-repair" ? "active" : ""}' href='/furnace-repair' title="Furnace Repair">Furnace Repair</a>
-								<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='/programmable' title="Programmable Thermostats">Programmable Thermostats</a>
+								<a class='dropdown-item {segment === "heating" ? "active" : ""}' href='heating' title="Heating">Heating</a>
+								<a class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='residential-hvac' title="Residential Hvac">Residential Hvac</a>
+								<a class='dropdown-item {segment === "furnace-sales" ? "active" : ""}' href='furnace-sales' title="New Furnace Installation">New Furnace Installation</a>
+								<a class='dropdown-item {segment === "furnace-repair" ? "active" : ""}' href='furnace-repair' title="Furnace Repair">Furnace Repair</a>
+								<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
 							</div>
 							<div class="col-6">
 								<div class="bg-image bg-heatnav">
@@ -117,12 +120,12 @@
 					<div class="row">
 						<div class="col-6 mega-content">
 							<h3>Cooling</h3>
-							<a class='dropdown-item {segment === "cooling" ? "active" : ""}' href='/cooling' title="Cooling">Cooling</a>
-							<a class='dropdown-item {segment === "conditioning" ? "active" : ""}' href='/conditioning' title="Air Conditioning">Air Conditioning</a>
-							<a class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='/residential-hvac' title="Residential Hvac">Residential Hvac</a>
-							<a class='dropdown-item {segment === "new-air-sales" ? "active" : ""}' href='/new-air-sales' title="New A/C Installation">New A/C Installation</a>
-							<a class='dropdown-item {segment === "ac-repair" ? "active" : ""}' href='/ac-repair' title="A/C Repair">A/C Repair</a>
-							<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='/programmable' title="Programmable Thermostats">Programmable Thermostats</a>
+							<a class='dropdown-item {segment === "cooling" ? "active" : ""}' href='cooling' title="Cooling">Cooling</a>
+							<a class='dropdown-item {segment === "conditioning" ? "active" : ""}' href='conditioning' title="Air Conditioning">Air Conditioning</a>
+							<a class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='residential-hvac' title="Residential Hvac">Residential Hvac</a>
+							<a class='dropdown-item {segment === "new-air-sales" ? "active" : ""}' href='new-air-sales' title="New A/C Installation">New A/C Installation</a>
+							<a class='dropdown-item {segment === "ac-repair" ? "active" : ""}' href='ac-repair' title="A/C Repair">A/C Repair</a>
+							<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
 						</div>
 						<div class="col-6">
 							<div class="bg-image">
@@ -133,10 +136,10 @@
 
 				</div>
 			</li>
-			<li class="nav-item"><a rel=prefetch class='{segment === "humidification" ? "active" : ""}' href='/humidification' title="Humidification">Humidification</a></li>
-			<li class="nav-item"><a rel=prefetch class='{segment === "reviews" ? "active" : ""}' href='/reviews' title="Reviews">Reviews</a></li>
-			<li class="nav-item"><a rel=prefetch class='{segment === "special" ? "active" : ""}' href='/special' title="Specials">Specials</a></li>
-			<li class="nav-item"><a rel=prefetch class='{segment === "contact" ? "active" : ""}' href='/contact' title="Contact Us">Contact</a></li>
+			<li class="nav-item"><a rel=prefetch class='{segment === "humidification" ? "active" : ""}' href='humidification' title="Humidification">Humidification</a></li>
+			<li class="nav-item"><a rel=prefetch class='{segment === "reviews" ? "active" : ""}' href='reviews' title="Reviews">Reviews</a></li>
+			<li class="nav-item"><a rel=prefetch class='{segment === "special" ? "active" : ""}' href='special' title="Specials">Specials</a></li>
+			<li class="nav-item"><a rel=prefetch class='{segment === "contact" ? "active" : ""}' href='contact' title="Contact Us">Contact</a></li>
 		</ul>
 	</nav>
 </section>

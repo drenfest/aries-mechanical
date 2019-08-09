@@ -6,7 +6,7 @@
     --primary-color: #ec3237;
     --primary: #ec3237;
     --secondary: #ffffff;
-    --success: #28a745;
+    --success: #3d5467;
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
@@ -46,6 +46,19 @@ text-transform: uppercase;
 
     .btn-light {
         color:var(--primary-color);
+    }
+
+
+    .about-section h2 {
+        font-weight: 700;
+    }
+
+    .dropdown-menu a{
+        color:#3d5467;
+    }
+    .dropdown-menu h3{
+        color:#3d5467;
+        font-weight: 700;
     }
 
 @media (min-width: 768px) {  

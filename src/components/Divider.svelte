@@ -4,7 +4,7 @@
 <style>
     .divider{
         position:relative;
-        background-color:var(--primary-color);
+        background-color:var(--success);
         color:white;
         font-size:25px;
         padding:2rem;
@@ -19,11 +19,11 @@
         width:50px;
         height:50px;
         transform:rotate(45deg);
-        margin-left:-25px;
-        background-color:var(--primary-color);
+        background-color:var(--success);
         bottom:-25px;
         left:50%;
         z-index:2;
+        margin-left:-25px;
     }
 </style>
 <section class="divider">
