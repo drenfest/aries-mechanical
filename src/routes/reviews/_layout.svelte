@@ -1,7 +1,5 @@
 <script>
     import Hero from '../../components/Hero.svelte';
-    import WhyUs from '../../components/WhyUs.svelte';
-    import Divider from '../../components/Divider.svelte';
 </script>
 <style>
 
@@ -18,7 +16,7 @@
     <div class="row">
         <section class="content">
             <section class="nn-section container">
-                REPLACE-PHP-CODE-HERE
+                <slot></slot>
             </section>
         </section>
     </div>
