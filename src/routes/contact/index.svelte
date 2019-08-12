@@ -129,10 +129,5 @@
 			</select>
 		</label>
 	</div>
-	<div class="form-group">
-		<label for="does_the_technician_need_a_ladder_for_access_if_so_how_tall_">Do We Need a Ladder? If so, How Tall:
-			<input class="form-control" name="does_the_technician_need_a_ladder_for_access_if_so_how_tall_" type="text" value="">
-		</label>
-	</div>
 	<button class="btn btn-lg btn-primary">Submit Form</button>
 </form>
