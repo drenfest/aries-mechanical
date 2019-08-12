@@ -15,11 +15,8 @@
 </Hero>
 <div class="container">
     <div class="row">
-        <section class="content col-xs-12 col-sm-8">
+        <section class="content">
             <slot></slot>
         </section>
-        <aside class="content col-xs-12 col-sm-4">
-            <CouponSidebar/>
-        </aside>
     </div>
 </div>
