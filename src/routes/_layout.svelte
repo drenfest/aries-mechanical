@@ -10,7 +10,9 @@
 
 
 <style>
-
+.nn-section{
+	padding:2rem;
+}
 </style>
 <MobileNav {segment}/>
 <Header></Header>
