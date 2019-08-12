@@ -40,8 +40,8 @@ $fbComment = "";
 $techEmail = urlencode("");
 $reviewStart = "";
 $checkinStart = "";
-$reviewCount = "";
-$checkinCount = "";
+$reviewCount = "5";
+$checkinCount = "10";
 //Optinal params for the Regional & Nation-wide Combination (beta)
 $lat = "";
 $long = "";

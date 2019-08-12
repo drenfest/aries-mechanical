@@ -49,6 +49,6 @@
 		</div>
 		<div class="col-sm social-head">social icons here</div>
 
-		<div class="col-sm google-review-logo"><a title="See Our Google Reviews" href="/"><img alt="Google Reviews Logo" src="/assets/images/google-reviews-logo.png"></a></div>
+		<div class="col-sm google-review-logo"><a title="See Our Google Reviews" href="https://search.google.com/local/writereview?placeid=ChIJlS9NoRO5DogRPl0lKtX7InU" target="_blank"><img alt="Google Reviews Logo" src="/assets/images/google-reviews-logo.png"></a></div>
 	</div>
 </header>
