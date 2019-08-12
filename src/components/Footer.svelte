@@ -54,7 +54,7 @@
                 <a class="footernav-item" href='heating' title="Heating">Heating</a>
                 <a class="footernav-item" href='cooling' title="Cooling">Cooling</a>
                 <a class="footernav-item" href='reviews' title="Reviews">Reviews</a>
-                <a class="footernav-item" href='/special' title="Specials">Speicals</a>
+                <a class="footernav-item" href='/special' title="Specials">Specials</a>
                 <a class="footernav-item" href='/maintenance' title="Maintenance">Maintenance</a>
                 <a class="footernav-item" href='/contact' title="Contact">Contact</a>
             </div>
