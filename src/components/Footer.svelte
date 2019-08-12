@@ -15,7 +15,6 @@
     }
     .footercontent {
         color: #fff;
-        align-items:center;
     }
     .footernav-item {
         display: block;
@@ -37,6 +36,9 @@
     .footercontent a:hover {
         color: rgba(255, 255, 255, .75);
         text-decoration: none;
+    }
+    .bottombar .footercontent{
+        align-items:center;
     }
 </style>
 <footer>
