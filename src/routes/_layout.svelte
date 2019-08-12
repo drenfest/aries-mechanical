@@ -5,6 +5,7 @@
 	import Footer from '../components/Footer.svelte';
 	import Divider from '../components/Divider.svelte';
 	import WhyUs from '../components/WhyUs.svelte';
+	import Nn from '../components/Nn.svelte';
 	export let segment;
 </script>
 
@@ -33,7 +34,5 @@
 <Divider>
 	<h2>See Our Reviews</h2>
 </Divider>
-<section class="nn-section container">
-	REPLACE-PHP-CODE-HERE
-</section>
+<Nn></Nn>
 <Footer></Footer>
