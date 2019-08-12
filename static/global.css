@@ -74,7 +74,9 @@ footer h2, footer h3, footer h4, footer h5, footer h6 {
 color:#fff;
 
 }
-
+div#nn-review-map-main {
+    display:none;
+}
 
 .divider > .container > *{
       color:#ffffff!important;
@@ -124,10 +126,6 @@ div#nn-review-map-main, div#nn-samap-map-main {
     -webkit-box-shadow: -1px 2px 6px #6c6c6c;
     -moz-box-shadow: -1px 2px 6px #6c6c6c;
     box-shadow: 1px 1px 4px #6c6c6c
-}
-
-div#nn-review-map-main.nn-map-medium {
-    height: 390px
 }
 
 div#nn-review-map-main.nn-map-large {

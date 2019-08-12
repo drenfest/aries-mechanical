@@ -3,8 +3,9 @@
 	import MobileNav from '../components/MobileNav.svelte';
 	import Header from '../components/Header.svelte';
 	import Footer from '../components/Footer.svelte';
-	export let segment;
 	import Divider from '../components/Divider.svelte';
+	import WhyUs from '../components/WhyUs.svelte';
+	export let segment;
 </script>
 
 
@@ -23,8 +24,9 @@
 			<slot></slot>
 		</main>
 {/if}
+<WhyUs></WhyUs>
 <Divider>
-See Our Reviews
+<h2>See Our Reviews</h2>
 </Divider>
 <section class="nn-section container">
 	REPLACE-PHP-CODE-HERE
