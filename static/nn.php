@@ -14,9 +14,9 @@ if (in_array($http_origin, $allowed_domains))
 //Base endpoint for all API calls
 $endpoint = "https://api.sidebox.com/plugin";
 //The resouce is the API Endpoint you'll be making a web request to
-$resource = "/nearbyreviews";
+//$resource = "/nearbyreviews";
 //$resource = "/nearbyservicearea";
-//$resource = "/nearbyserviceareareviewcombo";
+$resource = "/nearbyserviceareareviewcombo";
 //$resource = "/nationwideserviceareareviewcombo";
 //$resource = "/testimonials";
 //$resource = "/photogallery";

@@ -22,4 +22,7 @@
             <CouponSidebar/>
         </aside>
     </div>
+    <section class="nn-section container">
+        REPLACE-PHP-CODE-HERE
+    </section>
 </div>
