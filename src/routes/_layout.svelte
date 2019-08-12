@@ -21,27 +21,19 @@
 	<main>
 		<slot></slot>
 	</main>
-	<div class="container">
-		<WhyUs></WhyUs>
-	</div>
-	<Divider>
-		<h2>See Our Reviews</h2>
-	</Divider>
-	<section class="nn-section container">
-		REPLACE-PHP-CODE-HERE
-	</section>
 	{:else}
 		<main class="{segment} subpage">
 			<slot></slot>
 		</main>
-		<div class="container">
-			<WhyUs></WhyUs>
-		</div>
-		<Divider>
-			<h2>See Our Reviews</h2>
-		</Divider>
-		<section class="nn-section container">
-			REPLACE-PHP-CODE-HERE
-		</section>
+
 {/if}
+<div class="container">
+	<WhyUs></WhyUs>
+</div>
+<Divider>
+	<h2>See Our Reviews</h2>
+</Divider>
+<section class="nn-section container">
+	REPLACE-PHP-CODE-HERE
+</section>
 <Footer></Footer>
