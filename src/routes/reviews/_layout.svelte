@@ -1,6 +1,7 @@
 <script>
     import Hero from '../../components/Hero.svelte';
-    import CouponSidebar from '../../components/CouponSidebar.svelte';
+    import WhyUs from '../../components/WhyUs.svelte';
+    import Divider from '../../components/Divider.svelte';
 </script>
 <style>
 
@@ -16,7 +17,9 @@
 <div class="container">
     <div class="row">
         <section class="content">
-            <slot></slot>
+            <section class="nn-section container">
+                REPLACE-PHP-CODE-HERE
+            </section>
         </section>
     </div>
 </div>

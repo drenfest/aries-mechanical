@@ -1,6 +1,8 @@
 <script>
     import Hero from '../../components/Hero.svelte';
     import CouponSidebar from '../../components/CouponSidebar.svelte';
+    import WhyUs from '../../components/WhyUs.svelte';
+    import Divider from '../../components/Divider.svelte';
 </script>
 <style>
 
@@ -23,3 +25,12 @@
         </aside>
     </div>
 </div>
+<div class="container">
+    <WhyUs></WhyUs>
+</div>
+<Divider>
+    <h2>See Our Reviews</h2>
+</Divider>
+<section class="nn-section container">
+    REPLACE-PHP-CODE-HERE
+</section>
