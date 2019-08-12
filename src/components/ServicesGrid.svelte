@@ -21,6 +21,8 @@
         background-color:rgba(0,0,0,.4);
         background-blend-mode:overlay;
         font-family: 'Oswald', sans-serif;
+        background-size: cover;
+        background-position: center center;
 
     }
     .service-heating{

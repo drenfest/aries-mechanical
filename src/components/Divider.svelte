@@ -27,6 +27,8 @@
     }
     .divider > .container > *{
     color:#ffffff!important;
+    text-transform:uppercase;
+
     }
 
 </style>

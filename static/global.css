@@ -33,7 +33,26 @@ p {
 font-family: 'Oswald', sans-serif!important;
 font-weight: 700!important;
 text-transform: uppercase;
+font-size: 1.25rem;
+
     }
+
+    .btn-primary {
+  color: #fff!important;
+  background-color:var(--primary-color);
+  border-color:var(--primary-color);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #972023;
+    border-color:#972023;
+}
+
+a.btn-primary {
+   color: #fff!important;
+}
+
     .btn-light {
         color:var(--primary-color);
     }
@@ -50,6 +69,13 @@ text-transform: uppercase;
 img{
     max-width:100%;
 }
+
+footer h2, footer h3, footer h4, footer h5, footer h6 {
+color:#fff;
+
+}
+
+
 .divider > .container > *{
       color:#ffffff!important;
 }

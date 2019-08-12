@@ -25,6 +25,13 @@
 	background-position: center;
 	background-image: url("/assets/images/heatnav.jpg");
 	}
+
+	.bg-acnav {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("/assets/images/acnav.jpg");
+	}
 	.dropdown-menu{
 		min-width:600px;
 		margin:0;
@@ -127,8 +134,8 @@
 							<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
 						</div>
 						<div class="col-6">
-							<div class="bg-image">
-								Background Image
+							<div class="bg-image bg-acnav">
+
 							</div>
 						</div>
 					</div>

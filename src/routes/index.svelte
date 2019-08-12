@@ -8,7 +8,10 @@
 </script>
 <style>
 	.about-section{
-		padding:6rem 2rem;
+		padding:4rem 2rem 24rem;
+		background-image: url(/assets/images/homeaboutbk-m.jpg);
+		background-size: cover;
+		background-position: bottom center;
 	}
 	.about-section > .container > h2{
 		margin-bottom:1.75rem;
@@ -20,6 +23,28 @@
 	font-weight:300;
 	display:block;
 	text-transform:uppercase;
+	}
+
+	.about-support {
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	font-size:18px;
+	font-weight:400;
+	line-height:1.4em;
+	display:block;
+	margin-bottom:.15rem;
+	}
+	.abouthmtx {
+	padding:0px ;
+	}
+
+	.service-btns-bg{
+	background: rgb(61,84,103);
+background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
+	}
+	.service-buttons{
+		display:grid;
+		grid-template-rows:1fr 1fr 1fr;
 	}
 	.coupon-section{
 		background: #e6e6e6;
@@ -37,6 +62,28 @@
 		background-color:#711D1D;
 	}
 	@media screen and (min-width:768px){
+
+	.about-section{
+		padding:6rem 2rem 24rem;
+		background-image: url(/assets/images/homeaboutbk.jpg);
+		background-size: cover;
+		background-position: bottom center;
+	}
+	.abouthmtx {
+	padding:0px 75px;
+	}
+
+
+		.service-btns-bg{
+			background: rgb(61,84,103);
+background: linear-gradient(90deg, rgba(61,84,103,1) 9%, rgba(96,115,130,1) 90%);
+		}
+		.service-buttons{
+			grid-template-rows:1fr;
+			grid-template-columns: 1fr 1fr 1fr;
+			max-width: 1140px;
+			margin:auto;
+		}
 	}
 </style>
 <svelte:head>
@@ -63,6 +110,20 @@
 				<p>We are the HVAC contractor that specializes in residential heating and air conditioning solutions. If your looking to replace a current furnace or Air Conditioner or repair an exsisting call Aries Mechanical Inc.</p>
 			</div>
 		</div>
+
+		<div class="row justify-content-center" style="padding:15px 0 0px;">
+
+			<p class="about-support" >Free Estimates | 24/7 Support </p>
+		</div>
+
+		<div class="row justify-content-center" style="padding:0px 0 0;">
+
+			<a class="btn btn-primary text-center" style="display:block;" href="tel:+1815-695-5828" title="Click Here To Call Now ">Call Now! 815-695-5828</a>
+
+		</div>
+
+
+
 	</div>
 <!--OLD HOMEPAGE CONTENT START-->
 <!--<h2 class="section-heading">Heating</h2>-->
