@@ -15,6 +15,7 @@
     }
     .footercontent {
         color: #fff;
+        align-items:center;
     }
     .footernav-item {
         display: block;
@@ -76,8 +77,13 @@
 <div class="bottombar">
     <div class="container">
         <div class="row footercontent">
-            <div class="col-sm ">
+            <div class="col-sm">
                 &copy; 2019 All Rights Reserved
+            </div>
+            <div class="col-sm">
+                <a href="https://insightweb.net" title="Site Designed By Insight Marketing Solutions">
+                    <img src="/assets/images/designbyinsight.png" alt="Insight Marketing Solutions Inc Logo"/>
+                </a>
             </div>
         </div>
     </div>

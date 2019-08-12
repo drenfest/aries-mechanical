@@ -4,6 +4,7 @@
 	import Header from '../components/Header.svelte';
 	import Footer from '../components/Footer.svelte';
 	export let segment;
+	import Divider from '../components/Divider.svelte';
 </script>
 
 
@@ -22,6 +23,9 @@
 			<slot></slot>
 		</main>
 {/if}
+<Divider>
+See Our Reviews
+</Divider>
 <section class="nn-section container">
 	REPLACE-PHP-CODE-HERE
 </section>

@@ -17,7 +17,4 @@
         <section class="content">
             <slot></slot>
         </section>
-    <section class="nn-section container">
-        REPLACE-PHP-CODE-HERE
-    </section>
 </div>
