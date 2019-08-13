@@ -368,7 +368,7 @@ p.nn-checkin-reference, p.nn-survey-body {
     display: inline-block
 }
 
-@media only screen and (max-device-width: 667px) {
+@media only screen and (min-width:100px) and (max-width: 667px) {
     .nn-review-outer-cont {
         font-size: 180% !important
     }
@@ -389,7 +389,7 @@ p.nn-checkin-reference, p.nn-survey-body {
         padding: 1em !important
     }
 }
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
     .nn-review-outer-cont {
         font-size:180% !important;
         /* Your mileage may vary depending on your website font */

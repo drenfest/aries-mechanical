@@ -13,6 +13,9 @@
     h2 {
         padding:1rem;
     }
+    .row img{
+        margin:1rem 0;
+    }
 </style>
 <section class="why-us-section">
     <div class="container">
