@@ -9,10 +9,10 @@
 </style>
 <Hero
         heroImage="/assets/images/heros/hmhero1.jpg"
-        heroTitle="Contact Aries Mechanical"
-        heroBigText="Affordable & Quality HVAC Services For Over 30 Years"
-        heroText=" Your Hvac | A/C | Furnace Installation & Repair Company">
-    <p>Our customers are treated as if they are part of our family. We respect our customers and listen to their needs. We provide our customers with honesty and reliability that they deserve. Aries Mechanical, Inc. is known for our quality craftsmanship at competitive prices.</p>
+        heroTitle="Affordable & High Quality HVAC Services For Over 30 Years"
+        heroBigText="Contact Aries Mechanical"
+        heroText=" Fill Out The Form Below Or Call To Contact Aries">
+    <p>Contact Aries Mechanical, Inc. at 815-695-5828. We are located at 101 East Taylor Street in Newark, IL 60541</p>
     <a class="btn btn-light" href="/contact" title="Schedule Hvac Repair Or Hvac Installation Service">Schedule Service Now</a>
 </Hero>
 <div class="container">

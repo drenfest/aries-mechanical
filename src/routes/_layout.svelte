@@ -8,8 +8,6 @@
 	import Nn from '../components/Nn.svelte';
 	export let segment;
 </script>
-
-
 <style>
 .nn-section{
 	padding:2rem;

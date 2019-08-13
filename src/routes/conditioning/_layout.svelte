@@ -6,11 +6,11 @@
 
 </style>
 <Hero
-        heroImage="/assets/images/heros/hmhero1.jpg"
-        heroTitle="Air Conditioner Repair"
-        heroBigText="Affordable & Quality HVAC Services For Over 30 Years"
-        heroText=" Your Hvac | A/C | Furnace Installation & Repair Company">
-    <p>Our customers are treated as if they are part of our family. We respect our customers and listen to their needs. We provide our customers with honesty and reliability that they deserve. Aries Mechanical, Inc. is known for our quality craftsmanship at competitive prices.</p>
+        heroImage="/assets/images/heros/achero1.jpg"
+        heroTitle="Affordable & Quality"
+        heroBigText="Air Conditioner Repair"
+        heroText=" Your Top Rated A/C Repair Company">
+    <p>Our trained and certified specialists have the expertise and knowledge to guide you into total home cooling. </p>
     <a class="btn btn-light" href="/contact" title="Schedule Hvac Repair Or Hvac Installation Service">Schedule Service Now</a>
 </Hero>
 <div class="container">

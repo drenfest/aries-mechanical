@@ -76,6 +76,7 @@
         font-size:25px;
         font-weight:300;
         text-transform: uppercase;
+        width: 100%;
     }
     .hero-big-text{
         font-size:35px;
