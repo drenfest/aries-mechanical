@@ -22,8 +22,8 @@
     let getLinks = ()=>{
         let landingLinksArr=[];
         let newLink = "";
-        for(let lpCount = 0; lpCount < lpageNames.length - 1;lpCount++){
-            for(let lcCount = 0; lcCount < lpageCities.length - 1;lcCount++){
+        for(let lpCount = 0; lpCount < lpageNames.length;lpCount++){
+            for(let lcCount = 0; lcCount < lpageCities.length;lcCount++){
                 newLink = lpageNames[lpCount]+'-'+lpageCities[lcCount];
                 if(!landingLinksArr.indexOf(newLink) >= 0){
                     landingLinksArr = [...landingLinksArr,newLink];
@@ -44,10 +44,10 @@
             let linkCity = linkCityState.replace("-"+linkS.toLowerCase(),'').replace("-"," ");
             let linkC = linkCity.substr(0,1).toUpperCase() + linkCity.substr(1,linkCity.length - 1);
             if(linkCsSplit.length > 2){
-                linkC = linkCsSplit[0].substr(0,1).toUpperCase() + linkCsSplit[0].substr(1,linkCity.length - 1) + linkCsSplit[1].substr(0,1).toUpperCase() + linkCsSplit[1].substr(1,linkCity.length - 1);
+                linkC = linkCsSplit[0].substr(0,1).toUpperCase() + linkCsSplit[0].substr(1,linkCity.length - 1) +" "+ linkCsSplit[1].substr(0,1).toUpperCase() + linkCsSplit[1].substr(1,linkCity.length - 1);
             }
-            let linkTitle= linkRef.replace("heating-cooling-service-"+linkCityState,"Heating Cooling Service").replace("hvac-air-conditioning-repair-installation-services-"+linkCityState,"Hvac Air Conditioning Repair & Air Conditioning Installation Services").replace("hvac-furnace-repair-services-"+linkCityState,"Furnace Repair Services");
-            let linkText= linkRef.replace("heating-cooling-service-"+linkCityState,"Hvac Services "+linkC+" "+linkS).replace("hvac-air-conditioning-repair-installation-services-"+linkCityState,"A/C Services "+linkC+" "+linkS).replace("hvac-furnace-repair-services-"+linkCityState,"Furnace Services"+linkC+" "+linkS);
+            let linkTitle= linkRef.replace("heating-cooling-service-"+linkCityState,"Heating Cooling Service "+linkC+" "+linkS).replace("hvac-air-conditioning-repair-installation-services-"+linkCityState,"Hvac Air Conditioning Repair & Air Conditioning Installation Services "+linkC+" "+linkS).replace("hvac-furnace-repair-services-"+linkCityState,"Furnace Services "+linkC+" "+linkS);
+            let linkText= linkRef.replace("heating-cooling-service-"+linkCityState,"Hvac Services "+linkC+" "+linkS).replace("hvac-air-conditioning-repair-installation-services-"+linkCityState,"A/C Services "+linkC+" "+linkS).replace("hvac-furnace-repair-services-"+linkCityState,"Furnace Services "+linkC+" "+linkS);
             linkArr = [...linkArr,{href:linkRef,title:linkTitle,text:linkText}]
         }
         return linkArr;
