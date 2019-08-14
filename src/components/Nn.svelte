@@ -6,7 +6,7 @@
     onMount(()=>{
         if(nnCity.length > 1 && nnState.length > 1){
             let pms = `?city=${nnCity.replace('-',' ')}&state=${nnState}`;
-            let uri = encodeURI("/nn.php?"+pms);
+            let uri = "/nn.php?"+encodeURI(pms);
             fetch(uri).then(function(response) {
                 response.text().then(function(text) {
                     content = text;
