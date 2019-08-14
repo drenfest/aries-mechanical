@@ -8,7 +8,7 @@
 		// 		})
 		let cs = await params.city.split("-");
 		let state = await cs[cs.length - 1].toUpperCase();
-		let city = await params.city.replace(state.toLowerCase(),'').replace('-','').replace(params.city.substr(0,1),params.city.substr(0,1).toUpperCase());
+		let city = await params.city.replace("-"+state.toLowerCase(),'').replace('-',' ').replace(params.city.substr(0,1),params.city.substr(0,1).toUpperCase());
 		return {nnCity:city,nnState:state};
 	}
 </script>

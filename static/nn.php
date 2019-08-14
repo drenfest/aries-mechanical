@@ -26,6 +26,13 @@ $token = "1d3f6915-8b63-4d35-9f00-b2b78f3ff1cf";
 $agent = urlencode($_SERVER['HTTP_USER_AGENT']);
 $state = ""; // The abbreviated state. For example, Arizona should be "AZ"
 $city = urlencode("");
+if(strlen($_GET["state"]) > 1){
+    $state = strval($_GET["state"]);
+}
+if(strlen($_GET["city"]) > 1){
+    $city = strval(urlencode($_GET["city"]));
+}
+
 $showMap = "yes";
 $showFavorites = "";
 $start = "";

@@ -8,13 +8,13 @@
 		// 		})
 		let cs = await params.city.split("-");
 		let state = await cs[cs.length - 1].toUpperCase();
-		let city = await params.city.replace(state.toLowerCase(),'').replace('-','').replace(params.city.substr(0,1),params.city.substr(0,1).toUpperCase());
+		let city = await params.city.replace("-"+state.toLowerCase(),'').replace('-',' ').replace(params.city.substr(0,1),params.city.substr(0,1).toUpperCase());
 		return {nnCity:city,nnState:state};
 	}
 </script>
 <script>
 	export let nnCity;
-	export let nnState="IL";
+	export let nnState;
 	export let locations = [
 		{city:"Bristol", state:"IL"},
 		{city:"Lisbon", state:"IL"},
