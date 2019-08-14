@@ -1,4 +1,58 @@
 <script>
+    let lpageNames = [
+        "heating-cooling-service",
+        "hvac-air-conditioning-repair-installation-services",
+        "hvac-furnace-repair-services"
+    ];
+    let lpageCities = [
+        "bristol-il",
+        "lisbon-il",
+        "millbrook-il",
+        "newark-il",
+        "norway-il",
+        "oswego-il",
+        "ottawa-il",
+        "plano-il",
+        "sandwich-il",
+        "sheridan-il",
+        "somonauk-il",
+        "sugar-grove-il",
+        "yorkville-il",
+    ];
+    let getLinks = ()=>{
+        let landingLinksArr=[];
+        let newLink = "";
+        for(let lpCount = 0; lpCount < lpageNames.length - 1;lpCount++){
+            for(let lcCount = 0; lcCount < lpageCities.length - 1;lcCount++){
+                newLink = lpageNames[lpCount]+'-'+lpageCities[lcCount];
+                if(!landingLinksArr.indexOf(newLink) >= 0){
+                    landingLinksArr = [...landingLinksArr,newLink];
+                }
+            }
+        }
+        return landingLinksArr;
+    };
+    let landingLinks = getLinks();
+    let landingLinksRand = ()=>{
+        let linkArr = [];
+        for(let i = 0;i < 6; i++){
+            let rng = Math.round(Math.random() * (landingLinks.length - 1));
+            let linkRef=landingLinks[rng];
+            let linkCityState = linkRef.replace("heating-cooling-service-","").replace("hvac-air-conditioning-repair-installation-services-","").replace("hvac-furnace-repair-services-","");
+            let linkCsSplit = linkCityState.split('-');
+            let linkS = linkCsSplit[linkCsSplit.length - 1].toUpperCase();
+            let linkCity = linkCityState.replace("-"+linkS.toLowerCase(),'').replace("-"," ");
+            let linkC = linkCity.substr(0,1).toUpperCase() + linkCity.substr(1,linkCity.length - 1);
+            if(linkCsSplit.length > 2){
+                linkC = linkCsSplit[0].substr(0,1).toUpperCase() + linkCsSplit[0].substr(1,linkCity.length - 1) + linkCsSplit[1].substr(0,1).toUpperCase() + linkCsSplit[1].substr(1,linkCity.length - 1);
+            }
+            let linkTitle= linkRef.replace("heating-cooling-service-"+linkCityState,"Heating Cooling Service").replace("hvac-air-conditioning-repair-installation-services-"+linkCityState,"Hvac Air Conditioning Repair & Air Conditioning Installation Services").replace("hvac-furnace-repair-services-"+linkCityState,"Furnace Repair Services");
+            let linkText= linkRef.replace("heating-cooling-service-"+linkCityState,"Hvac Services "+linkC+" "+linkS).replace("hvac-air-conditioning-repair-installation-services-"+linkCityState,"A/C Services "+linkC+" "+linkS).replace("hvac-furnace-repair-services-"+linkCityState,"Furnace Services"+linkC+" "+linkS);
+            linkArr = [...linkArr,{href:linkRef,title:linkTitle,text:linkText}]
+        }
+        return linkArr;
+    };
+    export let linkArr = landingLinksRand();
 </script>
 <style>
     footer {
@@ -59,13 +113,9 @@
                 <a class="footernav-item" href='/contact' title="Contact">Contact</a>
             </div>
             <div class="col-sm footer3">
-                <a class="footernav-item" href='cooling' title="Cooling">Cooling</a>
-                <a class="footernav-item" href='/conditioning' title="Air Conditioning">Air Conditioning</a>
-                <a class="footernav-item" href='/residential-hvac' title="Residential Hvac">Residential Hvac</a>
-                <a class="footernav-item" href='/new-air-sales' title="New A/C Installation">New A/C Installation</a>
-                <a class="footernav-item" href='/ac-repair' title="A/C Repair">A/C Repair</a>
-                <a class="footernav-item" href='/programmable' title="Programmable Thermostats">Programmable
-                    Thermostats</a>
+                {#each linkArr as lk}
+                <a class="footernav-item" href='/{lk.href}' title="{lk.title}">{lk.text}</a>
+                {/each}
             </div>
             <div class="col-sm footer4">
                 <a class="footernav-item" href='reviews' title="Reviews">Reviews</a>

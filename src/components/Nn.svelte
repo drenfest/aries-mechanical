@@ -1,6 +1,6 @@
 <script>
+    export let content="";
     import {onMount} from 'svelte';
-    let content = "";
     onMount(()=>{
         fetch('/nn.php').then(function(response) {
             response.text().then(function(text) {
