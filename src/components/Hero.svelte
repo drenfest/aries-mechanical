@@ -166,8 +166,8 @@
 </section>
 <div class="service-btns-bg">
     <section class="service-buttons">
-        <ServiceBtn serviceBtnBg="#3d5467" serviceLink="/contact" serviceTitle="Schedule Service" serviceIcon="/assets/images/icons/repairs-icon.png" serviceIconAlt="Hvac a/c furnace Repairs Icon">Service</ServiceBtn>
-        <ServiceBtn serviceBtnBg="#324555" serviceLink="/financing" serviceTitle="Get Financing" serviceIcon="/assets/images/icons/replacements-icon.png" serviceIconAlt="Hvac a/c furnace Replacements Icon">Financing</ServiceBtn>
-        <ServiceBtn serviceBtnBg="#607382"  serviceLink="/maintenance" serviceTitle="Setup Annual Maintenance" serviceIcon="/assets/images/icons/maintenance-icon.png" serviceIconAlt="Hvac a/c furnace Maintenance Icon">Maintenance</ServiceBtn>
+        <ServiceBtn serviceBtnBg="#3d5467" serviceLink="/contact" serviceTitle="Schedule Service" serviceIcon="/assets/images/icons/gear.png" serviceIconAlt="Hvac a/c furnace Repairs Icon">Service</ServiceBtn>
+        <ServiceBtn serviceBtnBg="#324555" serviceLink="/financing" serviceTitle="Get Financing" serviceIcon="/assets/images/icons/money.png" serviceIconAlt="Hvac a/c furnace Replacements Icon">Financing</ServiceBtn>
+        <ServiceBtn serviceBtnBg="#607382"  serviceLink="/maintenance" serviceTitle="Setup Annual Maintenance" serviceIcon="/assets/images/icons/calendar.png" serviceIconAlt="Hvac a/c furnace Maintenance Icon">Maintenance</ServiceBtn>
     </section>
 </div>
