@@ -56,12 +56,12 @@
 </script>
 <style>
     footer {
-        border-top: 8px solid #526c82;
-        background-color: #3D5467;
+        border-top: 8px solid #EF575B;
+        background-color: #ec3237;
         padding: 5em 2em;
         color: #fff;
-        background: rgb(61, 84, 103);
-        background: linear-gradient(161deg, rgba(61, 84, 103, 1) 0%, rgba(82, 108, 130, 1) 100%);
+        /* background: rgb(61, 84, 103);
+        background: linear-gradient(161deg, rgba(61, 84, 103, 1) 0%, rgba(82, 108, 130, 1) 100%); */
     }
     .bottombar {
         background-color: #333333;

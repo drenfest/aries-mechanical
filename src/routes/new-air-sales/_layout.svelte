@@ -1,6 +1,7 @@
 <script>
     import Hero from '../../components/Hero.svelte';
-    import CouponSidebar from '../../components/CouponSidebar.svelte';
+    import ProductGuide from '../../components/ProductGuide.svelte';
+     import SidebarSubnav from '../../components/SidebarSubnav.svelte';
 </script>
 <style>
 
@@ -19,7 +20,9 @@
             <slot></slot>
         </section>
         <aside class="content col-xs-12 col-sm-4">
-            <CouponSidebar/>
+            <SidebarSubnav />
+            <ProductGuide/>
+
         </aside>
     </div>
 </div>

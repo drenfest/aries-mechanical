@@ -5,7 +5,7 @@
 
 </style>
 <Hero
-        heroImage="/assets/images/heros/hmhero1.jpg"
+        heroImage="/assets/images/heros/reviewhero1.jpg"
         heroTitle="Aries Mechanical "
         heroBigText="Reviews"
         heroText="Amazing Hvac Reviews From Our Amazing Customers">

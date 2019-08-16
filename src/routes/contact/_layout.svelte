@@ -1,6 +1,8 @@
 <script>
     import Hero from '../../components/Hero.svelte';
-    import CouponSidebar from '../../components/CouponSidebar.svelte';
+    import ProductGuide from '../../components/ProductGuide.svelte';
+    import SidebarSubnav from '../../components/SidebarSubnav.svelte';
+    export let segment;
 </script>
 <style>
     .address{
@@ -31,7 +33,8 @@
                 <strong>Phone: </strong><a href="tel:+1815-695-5828">815.695.5828</a><br>
                 <strong>Email: </strong><a href="mailto:steve@aries-mechanical.com">steve@aries-mechanical.com</a>
             </div>
-            <CouponSidebar/>
+            <SidebarSubnav {segment}/>
+            <ProductGuide/>
         </aside>
     </div>
 </div>

@@ -106,11 +106,11 @@
 					<div class="row">
 							<div class="col-6 mega-content">
 								<h3>Heating</h3>
-								<a class='dropdown-item {segment === "heating" ? "active" : ""}' href='heating' title="Heating">Heating</a>
-								<a class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='residential-hvac' title="Residential Hvac">Residential Hvac</a>
-								<a class='dropdown-item {segment === "furnace-sales" ? "active" : ""}' href='furnace-sales' title="New Furnace Installation">New Furnace Installation</a>
-								<a class='dropdown-item {segment === "furnace-repair" ? "active" : ""}' href='furnace-repair' title="Furnace Repair">Furnace Repair</a>
-								<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
+								<a rel=prefetch class='dropdown-item {segment === "heating" ? "active" : ""}' href='heating' title="Heating">Heating</a>
+								<a rel=prefetch class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='residential-hvac' title="Residential Hvac">Residential Hvac</a>
+								<a rel=prefetch class='dropdown-item {segment === "furnace-sales" ? "active" : ""}' href='furnace-sales' title="New Furnace Installation">New Furnace Installation</a>
+								<a rel=prefetch class='dropdown-item {segment === "furnace-repair" ? "active" : ""}' href='furnace-repair' title="Furnace Repair">Furnace Repair</a>
+								<a rel=prefetch class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
 							</div>
 							<div class="col-6">
 								<div class="bg-image bg-heatnav">
@@ -126,12 +126,12 @@
 					<div class="row">
 						<div class="col-6 mega-content">
 							<h3>Cooling</h3>
-							<a class='dropdown-item {segment === "cooling" ? "active" : ""}' href='cooling' title="Cooling">Cooling</a>
-							<a class='dropdown-item {segment === "conditioning" ? "active" : ""}' href='conditioning' title="Air Conditioning">Air Conditioning</a>
-							<a class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='residential-hvac' title="Residential Hvac">Residential Hvac</a>
-							<a class='dropdown-item {segment === "new-air-sales" ? "active" : ""}' href='new-air-sales' title="New A/C Installation">New A/C Installation</a>
-							<a class='dropdown-item {segment === "ac-repair" ? "active" : ""}' href='ac-repair' title="A/C Repair">A/C Repair</a>
-							<a class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
+							<a rel=prefetch class='dropdown-item {segment === "cooling" ? "active" : ""}' href='cooling' title="Cooling">Cooling</a>
+							<a rel=prefetch class='dropdown-item {segment === "conditioning" ? "active" : ""}' href='conditioning' title="Air Conditioning">Air Conditioning</a>
+							<a rel=prefetch class='dropdown-item {segment === "residential-hvac" ? "active" : ""}' href='residential-hvac' title="Residential Hvac">Residential Hvac</a>
+							<a rel=prefetch class='dropdown-item {segment === "new-air-sales" ? "active" : ""}' href='new-air-sales' title="New A/C Installation">New A/C Installation</a>
+							<a rel=prefetch class='dropdown-item {segment === "ac-repair" ? "active" : ""}' href='ac-repair' title="A/C Repair">A/C Repair</a>
+							<a rel=prefetch class='dropdown-item {segment === "programmable" ? "active" : ""}' href='programmable' title="Programmable Thermostats">Programmable Thermostats</a>
 						</div>
 						<div class="col-6">
 							<div class="bg-image bg-acnav">

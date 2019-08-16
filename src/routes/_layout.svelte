@@ -6,7 +6,6 @@
 	import Divider from '../components/Divider.svelte';
 	import WhyUs from '../components/WhyUs.svelte';
 	import Nn from '../components/Nn.svelte';
-	export let segment;
 	let lpages = [
 		'heating-cooling-service-bristol-il',
 		'heating-cooling-service-lisbon-il',
@@ -48,6 +47,7 @@
 		'hvac-furnace-repair-services-sugar-grove-il',
 		'hvac-furnace-repair-services-yorkville-il'
 	];
+	export let segment;
 	export let nnCity;
 	export let nnState;
 	if(lpages.indexOf(segment)  > -1){

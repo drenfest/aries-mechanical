@@ -84,6 +84,34 @@ div#nn-review-map-main {
 .subpage section.content{
     padding: 2rem 1rem;
 }
+
+.service-btns-bg {
+    margin-bottom: 30px;
+}
+main.heating .sidebar-subnav > ul > li > a.heating{
+    background-color:var(--primary-color);
+    color:white;
+}
+main.cooling .sidebar-subnav > ul > li > a.cooling{
+    background-color:var(--primary-color);
+    color:white;
+}
+main.humidification .sidebar-subnav > ul > li > a.humidification{
+    background-color:var(--primary-color);
+    color:white;
+}
+main.reviews .sidebar-subnav > ul > li > a.reviews{
+    background-color:var(--primary-color);
+    color:white;
+}
+main.special .sidebar-subnav > ul > li > a.special{
+    background-color:var(--primary-color);
+    color:white;
+}
+main.contact .sidebar-subnav > ul > li > a.contact{
+    background-color:var(--primary-color);
+    color:white;
+}
 @media (min-width: 768px) {
 
 
