@@ -54,9 +54,9 @@
 		nnCity = segment.replace('hvac-furnace-repair-services-','').replace('hvac-air-conditioning-repair-installation-services-','').replace('heating-cooling-service-','');
 		let nnCS = nnCity.split("-");
 		if (nnCS.length > 2){
-			nnCity = nnCS[0]+"%20"+nnCS[1]
+			nnCity = encodeURI(nnCS[0]+""+nnCS[1]);
 		}else{
-			nnCity = nnCS[0];
+			nnCity = encodeURI(nnCS[0]);
 		}
 		nnState = nnCS[nnCS.length - 1];
 	}

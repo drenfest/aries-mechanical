@@ -16,7 +16,7 @@
     }
     .service-btn > a:hover{
         text-decoration:none;
-        
+
     }
     .service-btn > a > img{
         border-right:1px solid white;

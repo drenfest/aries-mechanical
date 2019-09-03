@@ -7,11 +7,19 @@ export let segment ="";
     }
 
     .sidebar-subnav ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        font-family: 'Oswald', sans-serif;
-        font-size: 14px;
+       margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    /* border: 2px solid var(--success); */
+    background-color: #efefef;
+    padding: 15px 0px;
+    background-image:url("/assets/images/subnavbk.png");
+    background-position:bottom right;
+   background-repeat: no-repeat;
+
+
     }
 
     .sidebar-subnavli {
@@ -19,14 +27,14 @@ export let segment ="";
     }
 
     .sidebar-subnav a {
-        display: block;
-        padding: .25rem 0rem;
-        font-weight: 400;
-        color: var(--success);
-        font-size: 22px;
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        padding: 1rem 2rem;
+    display: block;
+    padding: .25rem 0rem;
+    font-weight: 400;
+    color: var(--success);
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: .5rem 2rem;
     }
 
     .sidebar-subnav a:hover {
