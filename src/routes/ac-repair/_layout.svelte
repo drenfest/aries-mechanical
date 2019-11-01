@@ -9,7 +9,7 @@
 <Hero
         heroImage="/assets/images/heros/achero1.jpg"
         heroTitle="Aries Mechanical"
-        heroBigText="Air Conditioner Repair and bacon"
+        heroBigText="Air Conditioner Repair"
         heroText=" Your A/C Repair Company">
     <p>We offer fast, affordable air conditioning repairs around the clock, and we dispatch all over the Chicago land area.</p>
     <a class="btn btn-light" href="/contact" title="Schedule Hvac Repair Or Hvac Installation Service">Schedule Service Now</a>

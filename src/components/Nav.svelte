@@ -96,6 +96,9 @@
 	.dropdown-item.active:not(*:active) {
 		color: var(--primary-color);
 	}
+	.dropdown-item:active:not(*:active) {
+		color: var(--primary-color);
+	}
 </style>
 <section class="bg-main-menu d-none d-md-block">
 	<nav class="container">

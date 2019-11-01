@@ -53,7 +53,57 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-<!--	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-<!--	<script src="https://d2gwjd5chbpgug.cloudfront.net/v3/scripts/heatmap.min.js"></script>-->
+	<script type="text/javascript">
+		var form = document.querySelector('form');
+		// Append the form status
+		var formStatus = document.createElement('div');
+		formStatus.setAttribute('class', 'form-status alert');
+		form.appendChild(formStatus);
+		form.onsubmit = function (e) {
+			// Stop the regular form submission
+			e.preventDefault();
+			// Collect the form data while iterating over the inputs
+			var data = {};
+			var params = "";
+			var cnt = 0;
+			for (var i = 0, ii = form.length; i < ii; ++i) {
+				var input = form[i];
+				data[input.name] = input.name;
+				if(cnt == 0){
+					params += data[input.name]+'='+input.value;
+					cnt++;
+				}else if(i < form.length){
+					params += '&'+data[input.name]+'='+input.value;
+					cnt++;
+				}
+			}
+			// Construct an HTTP request
+			var xhr = new XMLHttpRequest();
+			xhr.open('post', '/contact-actions/index.php', true);
+			// xhr.setRequestHeader('Accept', 'application/text;');
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;');
+			// Send the collected data as JSON
+			xhr.send(params);
+			// Callback function
+			xhr.onloadend = function (response) {
+				document.querySelector('form').style.display='none';
+				document.querySelector('.form-status').style.display='block';
+				if (response.target.status === 0) {
+					// Failed XmlHttpRequest should be considered an undefined error.
+					formStatus.className += ' alert-danger';
+					formStatus.innerHTML = form.dataset.formError;
+				} else if (response.target.status === 400) {
+					// Bad Request
+					formStatus.className += ' alert-danger';
+					formStatus.innerHTML = responseText.error;
+				} else if (response.target.status === 200) {
+					// Success
+					formStatus.className += ' alert-success';
+					formStatus.innerHTML = xhr.responseText;
+				}
+				console.log(response);
+			};
+		};
+	</script>
 </body>
 </html>

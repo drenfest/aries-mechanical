@@ -27,8 +27,6 @@
 				<option selected="selected" value="">Please select...</option>
 				<option value="Furnace">Furnace</option>
 				<option value="Air Conditioner">Air Conditioner</option>
-				<option value="Boiler">Boiler</option>
-				<option value="Heat Pump">Heat Pump</option>
 				<option value="Hot Water Tank">Hot Water Tank</option>
 				<option value="Other">Other</option>
 			</select>
@@ -100,10 +98,6 @@
 				<option value="A/C is Frozen">A/C is Frozen</option>
 				<option value="Unit is Making a Strange Noise">Unit Making Strange Noise</option>
 				<option value="No Heating to One Area of Home">No Heating to One Area of Home</option>
-				<option value="No Cooling to One Area of Home">No Cooling to One Area of Home</option>
-				<option value="Clogged Drain/Toilet">Clogged Drain/Toilet</option>
-				<option value="Flooded Basement">Flooded Basement</option>
-				<option value="Backed-up Sewer">Backed-up Sewer</option>
 				<option value="Other">Other</option>
 			</select>
 		</label>
@@ -129,5 +123,6 @@
 			</select>
 		</label>
 	</div>
+	<p class="form-status" style="display:none;">Your Message Has Been Successfully Sent</p>
 	<button class="btn btn-lg btn-primary">Submit Form</button>
 </form>
